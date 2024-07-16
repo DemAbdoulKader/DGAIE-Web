@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* Carousel styles */
+.carousel-inner img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  direction: rtl; /* Slide from right to left */
+}
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(6, 138, 13) !important;
+  border-radius: 50%;
+}
+
+.carousel-control-prev {
+  right: 0;
+  left: auto;
+}
+
+.carousel-control-next {
+  right: auto;
+  left: 0;
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(180deg);
+}
+
+/* Cards styles */
+.cards-section {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.card {
+  margin: 20px;
+  width: 300px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.btn-primary {
+  background-color: #f00;
+  border-color: #ffcb00;
+  width: 100%;
+}
+
+
+
+h1 {
+  text-align: center;
+}
+
+
+/**/
+.banner-container {
+  background-image: url('/assets/banner.jpg'); /* Utiliser le chemin absolu */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+
+/**/

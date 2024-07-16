@@ -1,0 +1,89 @@
+/* Footer styles */
+footer {
+    background-color: rgb(6, 138, 13) !important;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  footer h5 {
+    margin-bottom: 20px;
+  }
+  
+  footer .form-label {
+    color: white;
+  }
+  
+  footer .form-control {
+    background-color: white;
+    color: white;
+    border: none;
+  }
+  
+  footer .btn-primary {
+    background-color: #f00;
+    border-color: #ffcb00;
+  }
+  
+  footer .text-white {
+    color: #fff !important;
+  }
+  
+  footer a {
+    color: white;
+    margin-right: 15px;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+  
+  footer .text-center {
+    font-size: 0.9rem; /* Taille du texte du footer */
+  }
+  
+  /**/
+  
+  /* Styles pour le footer */
+  
+  
+  footer h5 {
+    font-size: 1.25rem; /* Taille du texte des sous-titres */
+    margin-bottom: 1rem; /* Marge en bas des sous-titres */
+  }
+  
+  footer p {
+    font-size: 0.9rem; /* Taille du texte des paragraphes */
+  }
+  
+  /* Styles pour les icônes des réseaux sociaux */
+  footer .fab {
+    color: #ffffff; /* Couleur des icônes */
+  }
+  
+  footer .fab:hover {
+    color: #f0f0f0; /* Couleur des icônes au survol */
+  }
+  
+  footer .fa-facebook-f {
+    background: #3b5998; /* Couleur de fond pour le bouton Facebook */
+    padding: 10px;
+    border-radius: 50%; /* Rendre l'icône circulaire */
+  }
+  
+  footer .fa-whatsapp {
+    background: #25D366; /* Couleur de fond pour le bouton WhatsApp */
+    padding: 10px;
+    border-radius: 50%; /* Rendre l'icône circulaire */
+  }
+  
+  /* Ajoute un espace entre les icônes */
+  footer .me-3 {
+    margin-right: 1rem;
+  }
+  
+  /* Ajoute un alignement au centre des icônes */
+  footer .text-center {
+    text-align: center;
+    color: #ffffff; /* Couleur du texte pour le texte centré */
+  }
+  
