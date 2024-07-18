@@ -1,6 +1,49 @@
+.my-container {
+  max-width: 500px;
+  margin-top: 150px;
+}
 
+.required {
+  color: red;
+}
+
+@media (max-width: 768px) {
   .my-container {
-    max-width: 500px;
-    margin-top: 200px;
+    margin-top: 100px;
+    padding: 20px;
   }
   
+  .card {
+    margin: 0 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .btn-link,
+  .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .d-flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .d-flex a,
+  .d-flex button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-container {
+    margin-top: 50px;
+  }
+  
+  .card-header h2 {
+    font-size: 1.5rem;
+  }
+}

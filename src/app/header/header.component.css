@@ -1,29 +1,87 @@
 /* Header styles */
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgb(255, 217, 9) !important;
+}
+
 header {
-    background-color: rgb(6, 138, 13) !important;
-    color: white;
-    padding: 15px 0;
-  }
-  
+  background-color: rgb(6, 138, 13) !important;
+  color: white;
+  padding: 15px 0;
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+header nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ensure the body content is not hidden under the fixed header */
+body {
+  padding-top: 80px; /* Adjust based on the height of the header */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header img {
-    width: 150px;
-    margin-right: 10px;
-  }
-  
-  header nav a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
-  }
-  
-  header nav a:hover {
-    text-decoration: underline;
+    flex-wrap: wrap;
   }
 
-  
+  .navbar-toggler {
+    display: block;
+  }
+
+  .collapse {
+    width: 100%;
+  }
+
+  .collapse nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .collapse nav a {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0;
+    text-align: left;
+  }
+}
+

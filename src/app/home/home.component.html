@@ -1,5 +1,5 @@
-<app-header/>
-  <!-- Carousel -->
+<app-header></app-header>
+<!-- Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -9,71 +9,98 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/image1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption1 d-none d-md-block">
+        <h5>LOUER VOS BATIMENTS</h5>
+        <p>
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+        </p>
+      </div>
     </div>
     <div class="carousel-item">
       <img src="assets/image2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption2 d-none d-md-block">
+        <h5>LOUER VOS BATIMENTS</h5>
+        <p>
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+        </p>
+      </div>
     </div>
     <div class="carousel-item">
       <img src="assets/image3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption3 d-none d-md-block">
+        <h5>LOUER VOS BATIMENTS</h5>
+        <p>
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+          Voici un texte descriptif pour le premier slide.
+        </p>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+
 <br>
 <br>
 <br>
 
 <h1>LES CARACTERISTIQUES DES BATIMENTS OU IMMEUBLES À LOUER</h1>
 
-  <!-- Cards Section -->
-  <div class="container my-5">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/card1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Batiment 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Voir Plus</a>
-          </div>
+<!-- Cards Section -->
+<div class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="assets/card1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Batiment 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Voir Plus</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/card2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Batiment 2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Voir Plus</a>
-          </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="assets/card2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Batiment 2</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Voir Plus</a>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/card3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Batiment 3</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Voir Plus</a>
-          </div>
+    </div>
+    <div class="col-md-4 col-sm-6 mb-4">
+      <div class="card">
+        <img src="assets/card3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Batiment 3</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Voir Plus</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-
-  <!-- Additional Banner with Cards -->
+<!-- Additional Banner with Cards -->
 <div class="banner-container">
   <div class="container my-5">
     <div class="row text-center">
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6 mb-4">
         <div class="card">
           <img src="assets/card4.jpg" class="card-img-top" alt="Card 4">
           <div class="card-body">
@@ -82,7 +109,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6 mb-4">
         <div class="card">
           <img src="assets/card5.jpg" class="card-img-top" alt="Card 5">
           <div class="card-body">
@@ -91,7 +118,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-6 mb-4">
         <div class="card">
           <img src="assets/card6.jpg" class="card-img-top" alt="Card 6">
           <div class="card-body">
@@ -104,4 +131,39 @@
   </div>
 </div>
 
-<app-footer/>
+<!-- Additional Banner with Cards -->
+<div class="dynamiiser">
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="assets/card4.jpg" class="card-img-top" alt="Card 4">
+          <div class="card-body">
+            <h5 class="card-title">Card title 4</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="assets/card5.jpg" class="card-img-top" alt="Card 5">
+          <div class="card-body">
+            <h5 class="card-title">Card title 5</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <img src="assets/card6.jpg" class="card-img-top" alt="Card 6">
+          <div class="card-body">
+            <h5 class="card-title">Card title 6</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
