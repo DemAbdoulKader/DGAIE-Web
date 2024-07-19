@@ -1,0 +1,87 @@
+ /* Styles généraux */
+ body {
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles pour le formulaire */
+form {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le contenu de la carte */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Utilisation de Flexbox pour aligner les éléments */
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.grid .col-12 {
+    width: 100%;
+}
+
+.grid .card {
+    padding: 20px; /* Ajoutez du padding si nécessaire */
+}
+
+.grid h1 {
+    margin-top: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* Styles pour les lignes et colonnes */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.col-4 {
+    flex: 1 1 30%; /* Ajustez cette valeur pour contrôler la largeur des colonnes */
+    min-width: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}

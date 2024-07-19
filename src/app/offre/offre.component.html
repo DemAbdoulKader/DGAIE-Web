@@ -1,1 +1,205 @@
 <app-header></app-header>
+
+<div class="grid">
+    <div class="col-12">
+        <div class="card">
+            <h1>Formulaire d'enregistrement d'une offre</h1>
+        </div>
+    </div>
+
+    <form action="">
+        <div class="row">
+            <div class="col-12 p-fluid">
+                <div class="card">
+                    <div formGroupName="landLord">
+                        <h3>Informations Bailleur</h3>
+                        <div class="grid">
+                            <!-- Premier groupe de trois champs -->
+                            <div class="row">
+                                <div class="col-4 md:col-4">
+                                    <label for="landLordId">ID</label>
+                                    <input id="landLordId" type="text" pInputText [disabled]="true">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="ifu">IFU</label>
+                                    <input id="ifu" formControlName="ifu" pInputText type="text">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="typeLandLord">Type de bailleur</label>
+                                    <select id="typeLandLord" formControlName="typeLandLord">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Deuxième groupe de trois champs -->
+                            <div class="row">
+                                <div class="col-4 md:col-4">
+                                    <label for="qualityApplicant">Qualité du bailleur</label>
+                                    <select id="qualityApplicant" formControlName="qualityApplicant">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="firstname">Nom</label>
+                                    <input id="firstname" pInputText formControlName="firstname" type="text">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="lastname">Prénom(s)</label>
+                                    <input id="lastname" pInputText formControlName="lastname" type="text">
+                                </div>
+                            </div>
+                            <!-- Troisième groupe de trois champs -->
+                            <div class="row">
+                                <div class="col-4 md:col-4">
+                                    <label for="companyName">Nom de l'entreprise</label>
+                                    <input id="companyName" pInputText formControlName="companyName" type="text">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="bp">Boîte Postale</label>
+                                    <input id="bp" pInputText formControlName="bp" type="text">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="phoneNumber">Téléphone</label>
+                                    <input id="phoneNumber" pInputText formControlName="phoneNumber" type="text">
+                                </div>
+                            </div>
+                            <!-- Quatrième groupe de trois champs -->
+                            <div class="row">
+                                <div class="col-4 md:col-4">
+                                    <label for="whatsapp">Whatsapp</label>
+                                    <input id="whatsapp" pInputText formControlName="whatsapp" type="text">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="emailAdress">Adresse Email</label>
+                                    <input id="emailAdress" pInputText formControlName="emailAdress" type="email">
+                                </div>
+                                <div class="col-4 md:col-4">
+                                    <label for="residencePlace">Lieu de Résidence</label>
+                                    <input id="residencePlace" pInputText formControlName="residencePlace" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12" formArrayName="Buildings">
+            <div class="card p-fluid">
+                <h3>Informations sur le bâtiment</h3>
+                <div>
+                    <div class="row">
+                        <div class="col-4 md:col-4">
+                            <label for="typeBuilding">Type de bâtiment</label>
+                            <select id="typeBuilding" formControlName="typeBuilding">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="typePropertyTitle">Type de titre de propriété</label>
+                            <select id="typePropertyTitle" formControlName="typePropertyTitle">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="buildingStanding">Standing de l'immeuble</label>
+                            <select id="buildingStanding" formControlName="buildingStanding">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 md:col-4">
+                            <label for="buildingValue">Valeur du bâtiment</label>
+                            <input id="buildingValue" pInputText formControlName="buildingValue" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="otherInformation">Autres informations</label>
+                            <input id="otherInformation" pInputText formControlName="otherInformation" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="region">Région</label>
+                            <select id="region" formControlName="region">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 md:col-4">
+                            <label for="province">Province</label>
+                            <select id="province" formControlName="province">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="departement">Département/Commune</label>
+                            <select id="departement" formControlName="departement">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="city">Secteur/Village</label>
+                            <select id="city" formControlName="city">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 md:col-4">
+                            <label for="district">Quartier</label>
+                            <input id="district" pInputText formControlName="district" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="sector">Secteur</label>
+                            <input id="sector" pInputText formControlName="sector" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="section">Section</label>
+                            <input id="section" pInputText formControlName="section" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 md:col-4">
+                            <label for="ilot">Îlot</label>
+                            <input id="ilot" pInputText formControlName="ilot" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="plot">Parcelle</label>
+                            <input id="plot" pInputText formControlName="plot" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="street">Rue</label>
+                            <input id="street" pInputText formControlName="street" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 md:col-4">
+                            <label for="doornumber">Numéro de porte</label>
+                            <input id="doornumber" pInputText formControlName="doornumber" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="geolocation">Géolocalisation</label>
+                            <input id="geolocation" pInputText formControlName="geolocation" type="text">
+                        </div>
+                        <div class="col-4 md:col-4">
+                            <label for="rentPrice">Prix de location</label>
+                            <input id="rentPrice" pInputText formControlName="rentPrice" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12" formArrayName="Buildings">
+            <button type="submit" pButton pRipple label="Enregistrer l'offre" class="btn btn-primary mb-3" >Enregistrer l'offre</button>
+        </div>
+    </form>
+</div>

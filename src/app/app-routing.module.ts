@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'connexion', component: ConnexionComponent },
   { path: 'inscription', component: InscriptionComponent },
   { path: 'offre', component: OffreComponent },
+
 ];
 
 @NgModule({
