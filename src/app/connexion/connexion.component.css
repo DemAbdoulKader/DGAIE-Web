@@ -1,12 +1,30 @@
+/* Style pour le conteneur principal avec l'image d'arrière-plan */
+.background-container {
+  background-image: url('/assets/DGAIE2.jpg'); /* Chemin vers l'image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la vue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style pour le conteneur du formulaire */
 .my-container {
   max-width: 500px;
-  margin-top: 150px;
+  margin-top: 150px; /* Ajuste la marge en fonction de la hauteur du header ou de l'espace souhaité */
+  background: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour mieux voir le texte */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .required {
   color: red;
 }
 
+/* Styles responsive */
 @media (max-width: 768px) {
   .my-container {
     margin-top: 100px;

@@ -1,9 +1,25 @@
-.my-container {
-  max-width: 600px;
-  margin-top: 150px;
+/* Style pour le conteneur principal avec l'image d'arrière-plan */
+.background-container {
+  background-image: url('/assets/DGAIE2.jpg'); /* Chemin vers l'image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Assure que le conteneur occupe toute la hauteur de la vue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Cacher toutes les étapes sauf la active */
+/* Style pour le conteneur du formulaire */
+.my-container {
+  max-width: 600px;
+  margin-top: 100px; /* Ajuste la marge en fonction de la hauteur du header ou de l'espace souhaité */
+  background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent pour une meilleure visibilité */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 .form-step {
   display: none;
 }

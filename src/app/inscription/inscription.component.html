@@ -1,69 +1,71 @@
 <app-header></app-header>
-<div class="container my-container">
-  <div class="card justify-content-md-center">
-    <div class="card-header text-center">
-      <h2>S'inscrire</h2>
-    </div>
-    <div class="card-body">
-      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
-        <!-- Étape 1 -->
-        <div class="form-step" [ngClass]="{'active': currentStep === 0}">
-          <div class="mb-3">
-            <label for="ifu" class="form-label">IFU <span class="required">*</span></label>
-            <input type="text" id="ifu" class="form-control" formControlName="ifu" placeholder="IFU" required>
+<div class="background-container"> <!-- Conteneur principal pour l'image et le formulaire -->
+  <div class="container my-container">
+    <div class="card justify-content-md-center">
+      <div class="card-header text-center">
+        <h2>S'inscrire</h2>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+          <!-- Étape 1 -->
+          <div class="form-step" [ngClass]="{'active': currentStep === 0}">
+            <div class="mb-3">
+              <label for="ifu" class="form-label">IFU <span class="required">*</span></label>
+              <input type="text" id="ifu" class="form-control" formControlName="ifu" placeholder="IFU" required>
+            </div>
           </div>
-        </div>
-        <!-- Étape 2 -->
-        <div class="form-step" [ngClass]="{'active': currentStep === 1}">
-          <div class="mb-3">
-            <label for="nom" class="form-label">Nom <span class="required">*</span></label>
-            <input type="text" id="nom" class="form-control" formControlName="nom" placeholder="Nom" required>
+          <!-- Étape 2 -->
+          <div class="form-step" [ngClass]="{'active': currentStep === 1}">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom <span class="required">*</span></label>
+              <input type="text" id="nom" class="form-control" formControlName="nom" placeholder="Nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="prenom" class="form-label">Prénom <span class="required">*</span></label>
+              <input type="text" id="prenom" class="form-control" formControlName="prenom" placeholder="Prénom" required>
+            </div>
+            <div class="mb-3">
+              <label for="entreprise" class="form-label">Nom de l'entreprise <span class="required">*</span></label>
+              <input type="text" id="entreprise" class="form-control" formControlName="entreprise" placeholder="Nom de l'entreprise" required>
+            </div>
+            <div class="mb-3">
+              <label for="boite-postale" class="form-label">Boîte Postale <span class="required">*</span></label>
+              <input type="text" id="boite-postale" class="form-control" formControlName="boitePostale" placeholder="Boîte Postale" required>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="prenom" class="form-label">Prénom <span class="required">*</span></label>
-            <input type="text" id="prenom" class="form-control" formControlName="prenom" placeholder="Prénom" required>
+          <!-- Étape 3 -->
+          <div class="form-step" [ngClass]="{'active': currentStep === 2}">
+            <div class="mb-3">
+              <label for="telephone" class="form-label">Numéro de téléphone <span class="required">*</span></label>
+              <input type="tel" id="telephone" class="form-control" formControlName="telephone" placeholder="Numéro de téléphone" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Adresse e-mail <span class="required">*</span></label>
+              <input type="email" id="email" class="form-control" formControlName="email" placeholder="Adresse e-mail" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Mot de passe <span class="required">*</span></label>
+              <input type="password" id="password" class="form-control" formControlName="password" placeholder="Mot de passe" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirme-password" class="form-label">Confirmer le mot de passe <span class="required">*</span></label>
+              <input type="password" id="confirme-password" class="form-control" formControlName="confirmePassword" placeholder="Confirmer le mot de passe" required>
+            </div>
+            <div class="mb-3">
+              <label for="residence" class="form-label">Lieu de résidence <span class="required">*</span></label>
+              <input type="text" id="residence" class="form-control" formControlName="residence" placeholder="Lieu de résidence" required>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="entreprise" class="form-label">Nom de l'entreprise <span class="required">*</span></label>
-            <input type="text" id="entreprise" class="form-control" formControlName="entreprise" placeholder="Nom de l'entreprise" required>
+          <!-- Boutons de navigation -->
+          <div class="form-navigation d-flex justify-content-between align-items-center mt-3">
+            <button type="button" id="prevButton" (click)="prevStep()" class="btn btn-secondary">Précédent</button>
+            <button type="button" id="nextButton" (click)="nextStep()" class="btn btn-primary">Suivant</button>
+            <button type="submit" id="submitButton" class="btn btn-primary" *ngIf="currentStep === 2">
+              <i class="fa-solid fa-check"></i>&nbsp;S'inscrire
+            </button>
           </div>
-          <div class="mb-3">
-            <label for="boite-postale" class="form-label">Boîte Postale <span class="required">*</span></label>
-            <input type="text" id="boite-postale" class="form-control" formControlName="boitePostale" placeholder="Boîte Postale" required>
-          </div>
-        </div>
-        <!-- Étape 3 -->
-        <div class="form-step" [ngClass]="{'active': currentStep === 2}">
-          <div class="mb-3">
-            <label for="telephone" class="form-label">Numéro de téléphone <span class="required">*</span></label>
-            <input type="tel" id="telephone" class="form-control" formControlName="telephone" placeholder="Numéro de téléphone" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Adresse e-mail <span class="required">*</span></label>
-            <input type="email" id="email" class="form-control" formControlName="email" placeholder="Adresse e-mail" required>
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Mot de passe <span class="required">*</span></label>
-            <input type="password" id="password" class="form-control" formControlName="password" placeholder="Mot de passe" required>
-          </div>
-          <div class="mb-3">
-            <label for="confirme-password" class="form-label">Confirmer le mot de passe <span class="required">*</span></label>
-            <input type="password" id="confirme-password" class="form-control" formControlName="confirmePassword" placeholder="Confirmer le mot de passe" required>
-          </div>
-          <div class="mb-3">
-            <label for="residence" class="form-label">Lieu de résidence <span class="required">*</span></label>
-            <input type="text" id="residence" class="form-control" formControlName="residence" placeholder="Lieu de résidence" required>
-          </div>
-        </div>
-        <!-- Boutons de navigation -->
-        <div class="form-navigation d-flex justify-content-between align-items-center mt-3">
-          <button type="button" id="prevButton" (click)="prevStep()" class="btn btn-secondary">Précédent</button>
-          <button type="button" id="nextButton" (click)="nextStep()" class="btn btn-primary">Suivant</button>
-          <button type="submit" id="submitButton" class="btn btn-primary" *ngIf="currentStep === 2">
-            <i class="fa-solid fa-check"></i>&nbsp;S'inscrire
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </div>
